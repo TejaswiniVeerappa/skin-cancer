@@ -1,0 +1,115 @@
+.history-page{
+    padding:54px 24px 60px;
+    background:
+    radial-gradient(circle at top right, rgba(77, 182, 172, 0.10), transparent 28%),
+    linear-gradient(180deg, rgba(11,18,32,0.96), rgba(17,26,43,0.98));
+    min-height:100vh;
+}
+
+.history-title{
+    text-align:center;
+    color:#f4f7fb;
+    font-size:44px;
+    margin-bottom:14px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.search-box{
+    width:100%;
+    max-width:520px;
+    display:block;
+    margin:0 auto 34px;
+    padding:15px 18px;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:999px;
+    font-size:16px;
+    background:rgba(20,29,46,0.88);
+    box-shadow:0 14px 28px rgba(0,0,0,0.16);
+    color:#f4f7fb;
+    outline:none;
+}
+
+.search-box:focus{
+    border-color:rgba(77,182,172,0.5);
+    box-shadow:0 0 0 4px rgba(77,182,172,0.14);
+}
+
+.history-table{
+    width:100%;
+    border-collapse:collapse;
+    background:rgba(20,29,46,0.88);
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 24px 60px rgba(0,0,0,0.22);
+    border:1px solid rgba(255,255,255,0.07);
+}
+
+.history-table th{
+    background:linear-gradient(135deg,#102133 0%, #1f7a6d 100%);
+    color:white;
+    padding:16px 14px;
+    font-size:14px;
+    letter-spacing:0.04em;
+}
+
+.history-table td{
+    padding:16px 14px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    color:#d8e2ee;
+}
+
+.history-table tr:hover{
+    background:rgba(77,182,172,0.06);
+}
+
+.badge,
+.risk{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:96px;
+    padding:8px 14px;
+    border-radius:999px;
+    color:white;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:0.04em;
+}
+
+.benign{
+    background:linear-gradient(135deg,#1f7a6d 0%, #134f46 100%);
+}
+
+.malignant{
+    background:linear-gradient(135deg,#b85c5c 0%, #8c2f2f 100%);
+}
+
+.low{
+    background:linear-gradient(135deg,#1f7a6d 0%, #134f46 100%);
+}
+
+.medium{
+    background:linear-gradient(135deg,#c58a34 0%, #9b6a22 100%);
+}
+
+.high{
+    background:linear-gradient(135deg,#b85c5c 0%, #8c2f2f 100%);
+}
+
+.no-history{
+    text-align:center;
+    font-size:18px;
+    color:#a7b4c7;
+    padding:28px 0;
+}
+
+@media(max-width:900px){
+    .history-title{
+        font-size:38px;
+    }
+
+    .history-page{
+        padding:36px 16px 48px;
+    }
+}

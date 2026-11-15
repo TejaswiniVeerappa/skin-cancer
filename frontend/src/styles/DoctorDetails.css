@@ -1,0 +1,125 @@
+/* ------------------------------
+   Doctor Details Page
+------------------------------ */
+
+.doctor-details-container {
+    min-height: 100vh;
+    background: #f5f9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.doctor-profile-card {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    padding: 40px;
+    text-align: center;
+}
+
+.doctor-image {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    background: #1976D2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.doctor-profile-card h1 {
+    color: #1565C0;
+    margin-bottom: 8px;
+}
+
+.doctor-profile-card h3 {
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.doctor-info {
+    text-align: left;
+    background: #f8fbff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.doctor-info p {
+    font-size: 17px;
+    margin: 14px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.6;
+}
+
+.doctor-info svg {
+    color: #1976D2;
+    font-size: 20px;
+}
+
+.about-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about-section h2 {
+    color: #1565C0;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.appointment-btn {
+    margin-top: 35px;
+    background: #1976D2;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.appointment-btn:hover {
+    background: #0d47a1;
+}
+
+@media (max-width: 768px) {
+
+    .doctor-profile-card {
+        padding: 25px;
+    }
+
+    .doctor-info p {
+        font-size: 15px;
+    }
+
+    .about-section p {
+        font-size: 15px;
+    }
+
+    .doctor-profile-card h1 {
+        font-size: 28px;
+    }
+
+    .doctor-profile-card h3 {
+        font-size: 18px;
+    }
+}

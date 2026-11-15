@@ -1,0 +1,16 @@
+**/.env
+!.env.example
+
+**/venv/
+**/__pycache__/
+*.py[cod]
+**/node_modules/
+**/dist/
+
+/logs/
+/.dist/
+/dataset/
+
+/backend/*.txt
+/frontend/*.txt
+/Desktop/

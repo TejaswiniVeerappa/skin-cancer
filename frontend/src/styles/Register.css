@@ -1,0 +1,221 @@
+/* ========================= */
+/* Register Page */
+/* ========================= */
+
+.register-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+      radial-gradient(circle at top right, rgba(31,122,109,0.12), transparent 28%),
+      linear-gradient(180deg, rgba(251,250,248,0.92), rgba(237,244,247,0.98));
+    padding:50px 20px;
+}
+
+.register-card{
+    width:min(100%, 520px);
+    background:rgba(255,255,255,0.84);
+    backdrop-filter:blur(18px);
+    padding:42px;
+    border-radius:28px;
+    box-shadow:0 24px 60px rgba(16,33,51,0.12);
+    border:1px solid rgba(16,33,51,0.08);
+    text-align:center;
+}
+
+.register-icon{
+    font-size:64px;
+    color:#1f7a6d;
+    margin-bottom:15px;
+}
+
+.register-card h1{
+    font-size:40px;
+    color:#102133;
+    margin-bottom:10px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.register-card p{
+    color:#5d6c7b;
+    font-size:16px;
+    margin-bottom:28px;
+    line-height:1.7;
+}
+
+.register-card form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.input-group{
+    position:relative;
+}
+
+.input-group input{
+    width:100%;
+    padding:15px 50px;
+    border:1px solid rgba(16,33,51,0.12);
+    border-radius:16px;
+    font-size:16px;
+    box-sizing:border-box;
+    outline:none;
+    background:#fff;
+    transition:.25s ease;
+}
+
+.input-group input:focus{
+    border-color:#1f7a6d;
+    box-shadow:0 0 0 4px rgba(31,122,109,.12);
+}
+
+.input-icon{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#1f7a6d;
+    font-size:18px;
+}
+
+.eye-icon{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#1f7a6d;
+    font-size:20px;
+}
+
+.register-card button{
+    background:linear-gradient(135deg,#1f7a6d 0%, #134f46 100%);
+    color:white;
+    border:none;
+    padding:16px;
+    font-size:17px;
+    border-radius:16px;
+    cursor:pointer;
+    transition:.25s ease;
+    box-shadow:0 18px 30px rgba(31,122,109,0.22);
+}
+
+.register-card button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 22px 34px rgba(31,122,109,0.28);
+}
+.input-group select{
+    width:100%;
+    padding:16px;
+    border:1px solid rgba(16,33,51,0.12);
+    border-radius:16px;
+    font-size:16px;
+    outline:none;
+    background:white;
+    box-sizing:border-box;
+}
+
+.remember-section{
+    display:flex;
+    justify-content:flex-start;
+    margin:10px 0;
+}
+
+.remember-section label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#5d6c7b;
+    font-size:14px;
+}
+
+.remember-section input{
+    width:18px;
+    height:18px;
+}
+
+.login-links{
+    margin-top:20px;
+}
+
+.login-links p{
+    color:#5d6c7b;
+}
+
+.login-links a{
+    color:#1f7a6d;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login-links a:hover{
+    text-decoration:underline;
+}
+
+/* ========================= */
+/* Role Selector */
+/* ========================= */
+.role-selector{
+    margin-bottom:28px;
+    text-align:left;
+}
+
+.role-label{
+    color:#333 !important;
+    font-weight:700 !important;
+    margin-bottom:10px !important;
+    font-size:15px !important;
+    text-align:left;
+}
+
+.role-options{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.role-btn{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:6px;
+    padding:14px 8px !important;
+    background:rgba(255,255,255,0.9) !important;
+    color:#1f7a6d !important;
+    border:1px solid rgba(31,122,109,0.14) !important;
+    border-radius:18px !important;
+    font-size:13px !important;
+    font-weight:700 !important;
+    cursor:pointer;
+    transition:0.25s ease;
+    font-family:inherit;
+    margin:0 !important;
+    width:100% !important;
+}
+
+.role-btn:hover{
+    background:#ffffff !important;
+    border-color:rgba(31,122,109,0.3) !important;
+    transform:translateY(-2px);
+    color:#134f46 !important;
+}
+
+.role-btn.active{
+    background:linear-gradient(135deg,#1f7a6d 0%, #134f46 100%) !important;
+    color:white !important;
+    border-color:transparent !important;
+    box-shadow:0 18px 30px rgba(31,122,109,0.22) !important;
+}
+
+.role-btn .role-icon{
+    font-size:20px;
+}
+
+@media(max-width:600px){
+    .role-options{
+        grid-template-columns:1fr;
+    }
+}

@@ -1,0 +1,148 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 68px;
+    background:rgba(16, 33, 51, 0.78);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    box-shadow:0 18px 45px rgba(8, 18, 28, 0.16);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    backdrop-filter:blur(18px);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    font-size:32px;
+    color:#d7b98d;
+    filter:drop-shadow(0 6px 15px rgba(215,185,141,0.25));
+}
+
+.logo h2{
+    color:#ffffff;
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:0.4px;
+    font-family:'Cormorant Garamond', serif;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    list-style:none;
+    gap:12px;
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.nav-links a,
+.logout-btn{
+    text-decoration:none;
+    color:rgba(255,255,255,0.92);
+    font-size:16px;
+    font-weight:600;
+    padding:10px 16px;
+    border-radius:999px;
+    transition:all 0.28s ease;
+    background:transparent;
+    border:1px solid transparent;
+    cursor:pointer;
+    font-family:inherit;
+}
+
+.nav-links a:hover,
+.logout-btn:hover{
+    background:rgba(255,255,255,0.12);
+    border-color:rgba(255,255,255,0.15);
+    color:#ffffff;
+    transform:translateY(-1px);
+}
+
+.nav-links a.active{
+    background:rgba(255,255,255,0.16);
+    border-color:rgba(255,255,255,0.18);
+    color:#ffffff;
+}
+
+.user-greeting-container{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.user-greeting{
+    color:#f5f7fa;
+    font-size:15px;
+    font-weight:600;
+}
+
+.role-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:7px 14px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+    color:white;
+    letter-spacing:0.3px;
+    box-shadow:0 10px 22px rgba(0,0,0,0.16);
+}
+
+.patient-badge{
+    background:linear-gradient(135deg,#2d8fd6,#1f6aa5);
+}
+
+.hospital-badge{
+    background:linear-gradient(135deg,#1f7a6d,#155a50);
+}
+
+.superadmin-badge{
+    background:linear-gradient(135deg,#b56d62,#8d3d35);
+}
+
+@media(max-width:900px){
+
+.user-greeting-container{
+    width:100%;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.navbar{
+    flex-direction:column;
+    padding:18px 18px 16px;
+    gap:14px;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+.nav-links a,
+.logout-btn{
+    font-size:15px;
+    padding:9px 14px;
+}
+
+}
